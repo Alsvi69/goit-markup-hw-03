@@ -41,15 +41,76 @@ ol {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* глобальні налаштування, що дозволяють не задавати зайві класи 
+кожному елементу, чи дублювати стилі зміни типу елемента.
+<div class="card">
+  <img class="card-image" src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=320" alt="A cat">
+  <h2 class="card-heading">Card title 1</h2>
+</div> */
+/* .card {
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f44336;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  max-width: 100%;
+}
+
+.card-heading {
+  margin: 0;
+  padding: 20px;
+  font-weight: 500;
+  background-color: #03a9f4;
+}
+
+.card + .card {
+  margin-top: 20px;
+} */
 .container {
-  width: 1158px;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+.container-header {
+  display: flex;
+  background-color: aqua;
+}
+.container-hero {
+  /* height: 400; */
+  /* background-color: rgb(0, 255, 55); */
+}
+.container-features {
+  background-color: rgb(183, 0, 255);
+}
+.container-products {
+  background-color: rgb(255, 251, 0);
+}
+.container-team {
+  background-color: rgb(4, 0, 255);
+}
+.container-footer {
+  background-color: rgb(216, 141, 98);
+}
+/* width: 1158px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
   outline-offset: -2px;
   padding-left: 15px;
-  padding-right: 15px;
-}
+  padding-right: 15px; */
+
 .link {
   text-decoration: none;
 }
@@ -75,8 +136,17 @@ button {
   color: var(--title-color);
 }
 .header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-menu-container {
+  display: flex;
+  max-width: 261px;
+  gap: 40px;
+  align-items: center;
 }
 .header-nav-link {
+  /* display: block; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -89,6 +159,9 @@ button {
 }
 .address {
   font-style: normal;
+}
+.address-list {
+  display: flex;
 }
 .address-link {
   font-size: 16px;
@@ -131,6 +204,10 @@ button {
 .features-section {
   padding-top: 120px;
 }
+.features-list {
+  display: flex;
+  justify-content: space-around;
+}
 .features-item {
 }
 .features-title {
@@ -147,8 +224,14 @@ button {
   color: var(--paragraph-color);
 }
 /*Products*/
+.products-section {
+}
 .products .list {
   background-color: var(--background-color-white);
+}
+.products-list {
+  display: flex;
+  justify-content: space-around;
 }
 .products-title {
   font-weight: 700;
@@ -164,10 +247,12 @@ button {
 .products-item {
 }
 /*Team*/
-.team {
+.team-section {
   background-color: var(--logo-footer-color);
 }
 .team-list {
+  display: flex;
+  justify-content: space-around;
 }
 .team-title {
   font-weight: 700;
@@ -197,7 +282,7 @@ button {
   color: var(--paragraph-color);
 }
 /*Footer*/
-.footer-background {
+.page-footer {
   background-color: var(--title-color);
 }
 .footer-logo {
@@ -220,6 +305,11 @@ button {
 }
 /*Portfolio page*/
 /*Main*/
+.button-pf-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
 .btn-pf {
   font-weight: 500;
   font-size: 16px;
@@ -233,6 +323,11 @@ button {
 .btn-pf:focus {
   color: var(--background-color-white);
   background-color: var(--dark-blue-color);
+}
+.products-pf-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .card-title {
   font-weight: 500;
