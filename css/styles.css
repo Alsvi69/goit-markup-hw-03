@@ -85,6 +85,7 @@ img {
 }
 .container-header {
   display: flex;
+  justify-content: space-between;
   background-color: aqua;
 }
 .container-hero {
@@ -138,6 +139,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  gap: 60px;
 }
 .nav-menu-container {
   display: flex;
@@ -162,6 +164,7 @@ img {
 }
 .address-list {
   display: flex;
+  gap: 20px;
 }
 .address-link {
   font-size: 16px;
