@@ -152,20 +152,20 @@ img {
 }
 .nav-list-item {
   font-weight: 500;
-  font-style: 16px;
+  /* font-style: 16px; */
   line-height: 1.5;
   display: block;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  padding: 24px 0;
 }
 .header-nav-link {
-  /* display: block; */
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding: 24px 0;
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -190,13 +190,16 @@ img {
 }
 .visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  margin: -1px;
-  padding: 0;
+  overflow: hidden;
   border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /*Main style*/
@@ -246,7 +249,7 @@ img {
 .features-list {
   display: flex;
   justify-content: space-between;
-  /* gap: 24px; */
+  gap: 24px;
 }
 .features-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -369,13 +372,13 @@ img {
 /*Portfolio page*/
 /*Main*/
 .portfolio-section {
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 .button-pf-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-top: 96px;
   margin-bottom: 72px;
 }
 .btn-pf {
