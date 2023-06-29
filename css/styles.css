@@ -133,7 +133,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
-  margin-right: 76px;
+
   /* padding: 24px 0; */
 }
 .header-logo-accent {
@@ -376,9 +376,10 @@ img {
 }
 .footer-text {
   max-width: 264px;
-  /* font-size: 16px;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em; */
+  letter-spacing: 0.32px;
+
   color: var(--logo-footer-color);
 }
 /*Portfolio page*/
@@ -403,9 +404,9 @@ img {
   background-color: var(--logo-footer-color);
   padding: 12px 24px;
   border-radius: 4px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid #e7e9fc;
+  /* box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1); */
 }
 .btn-pf:hover,
 .btn-pf:focus {
